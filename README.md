@@ -2,7 +2,7 @@
 [![Size](https://img.shields.io/bundlephobia/minzip/stenum.svg)]()
 [![license](https://img.shields.io/github/license/porsager/stenum.svg)]()
 
-# 📬 `stenum`
+# 🗿 `stenum`
 
 > Like enums where each one can contain a value
 
