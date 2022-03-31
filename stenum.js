@@ -1,4 +1,6 @@
-export default function stenum(states, observer) {
+export default stenum
+
+function stenum(states, observer) {
   let current = 0
   let value = true
   function s(key) {
