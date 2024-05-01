@@ -3,21 +3,19 @@
   "version": "0.0.5",
   "description": "Stenum",
   "type": "module",
-  "module": "stenum.js",
-  "browser": "stenum.umd.js",
-  "main": "stenum.umd.js",
-  "exports": {
-    "import": "./stenum.js",
-    "default": "./stenum.umd.js"
-  },
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/porsager/stenum.git"
   },
+  "engines": {
+    "node": ">=12"
+  },
+  "files": [
+    "index.js"
+  ],
   "scripts": {
-    "test": "echo please PR",
-    "prepublishOnly": "npm run build",
-    "build": "node -e 'fs.writeFileSync(\"stenum.umd.js\",\";(function(g){\"+fs.readFileSync(\"stenum.js\",\"utf8\").replace(\"export default stenum\",`typeof exports===\"object\"&&typeof module\\!==\"undefined\"?module.exports=stenum:((g?g:self).stenum=stenum);`) + \"})(this);\")'"
+    "test": "echo please PR"
   },
   "author": "Rasmus Porsager <rasmus@porsager.com>",
   "license": "WTFPL",
